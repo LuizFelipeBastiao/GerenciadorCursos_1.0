@@ -1,11 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class Modulo
-{
-	public Modulo()
+namespace GerenciadorCursos {
+	public static class Modulo
 	{
-	public float idModulo { get; set; }
-	public char nomeModulo { get; set; }
-	public bool ConclusaoModulo { get; set; }
+		
+		public static float idModulo { get; set; }
+		public static char nomeModulo { get; set; }
+		public static bool ConclusaoModulo { get; set; }
 	}
+
 }
+

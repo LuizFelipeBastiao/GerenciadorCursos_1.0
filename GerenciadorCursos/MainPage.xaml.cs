@@ -1,21 +1,5 @@
 ﻿
 namespace GerenciadorCursos { 
-
-    public class Aluno
-    {
-        public string nome { get; set; }
-        public string email { get; set; }
-
-        public string dataNasc { get; set; }
-
-        public string cpf { get; set; }
-
-        public string rg { get; set; }
-        
-        public string endereco { get; set; }
-
-        public string telefone { get; set; }
-    }
     public partial class MainPage : ContentPage
     {
 
@@ -28,8 +12,6 @@ namespace GerenciadorCursos {
         public Aluno alunos = new Aluno();
 
         List<Aluno> listaAlunos;
-
-        ListView listView = new ListView();
         private void OnCounterClicked(object sender, EventArgs e)
         {
             
