@@ -11,7 +11,7 @@
             <Setter Property="Margin"
                 Value="10"/>
             <Setter Property="RowSpacing"
-                Value="10"/>
+                Value="50"/>
             <Setter Property="Padding"
                 Value="10"/>
 
@@ -19,20 +19,37 @@
         <Style TargetType="Label">
             <Setter Property="VerticalTextAlignment"
             Value="Center"/>
+            <Setter Property="Padding"
+                    Value="20"/>
         </Style>
         <Style TargetType="HorizontalStackLayout">
             <Setter Property="Spacing"
             Value="10"/>
 
         </Style>
+        
     </ContentPage.Resources>
-
-    <Label Text="Tela Inicial"
-           FontSize="Title"
-           VerticalTextAlignment="Center"
-           HorizontalTextAlignment="Center"
-           
+    <Grid RowDefinitions="Auto,Auto,Auto">
+        <VerticalStackLayout Grid.Row="3"
+                             Grid.Column="3"
+                             Spacing="20">
+            <Label Text="Login"
+                   FontSize="Title"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                  
            />
+            <Entry WidthRequest="300" 
+                   Placeholder="E-Mail"/>
+            <Entry WidthRequest="300" 
+                   Placeholder="Senha"/>
+            
+            <Button Text ="Confirmar"
+                    HorizontalOptions="Center"/>
+            
+        </VerticalStackLayout>
+        
+    </Grid>
 
 
 

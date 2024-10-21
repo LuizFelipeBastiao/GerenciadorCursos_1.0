@@ -5,7 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:GerenciadorCursos"
     Shell.FlyoutBehavior="Disabled"
-    Title="Gerenciador de Cursos Online">
+    Title="Gerenciador de Cursos Online"
+    >
 
     <TabBar>
         <ShellContent
