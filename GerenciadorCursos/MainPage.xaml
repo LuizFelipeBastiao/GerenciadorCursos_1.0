@@ -1,108 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GerenciadorCursos.MainPage">
+             x:Class="GerenciadorCursos.MainPage"
+      
+>
+    <ContentPage.Resources>
+        <Style TargetType="Grid">
+            <Setter Property="ColumnSpacing"
+                Value="10"/>
+            <Setter Property="Margin"
+                Value="10"/>
+            <Setter Property="RowSpacing"
+                Value="10"/>
+            <Setter Property="Padding"
+                Value="10"/>
 
-    <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="VerticalTextAlignment"
+            Value="Center"/>
+        </Style>
+        <Style TargetType="HorizontalStackLayout">
+            <Setter Property="Spacing"
+            Value="10"/>
 
-            <Label
-                Text="Matricula"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+        </Style>
+    </ContentPage.Resources>
 
-            <HorizontalStackLayout Spacing="30">
-
-                <Entry
-                    x:Name ="NomeAluno"
-                    WidthRequest="300"
-                    Placeholder="Nome"
-                    />
-                <Entry
-                    x:Name ="Email"
-                    WidthRequest="400"
-                    Placeholder="E-Mail"
-                />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Spacing="30">
-                <Entry
-                    x:Name ="DataDeNascimento"
-                    WidthRequest="150"
-                    Placeholder="DD/MM/AAAA"
-                    HorizontalOptions="Start"
-                />
-
-                <Entry
-                    x:Name="CPF"
-                    WidthRequest="200"
-                    Placeholder="CPF"
-                />
-                <Entry
-                    x:Name="RG"
-                    WidthRequest="200"
-                    Placeholder="RG"
-                />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Spacing="30">
-                <Entry
-                    x:Name ="Endereco"
-                    WidthRequest="400"
-                    Placeholder="Endereço"
-                    HorizontalOptions="Start"
-                />
-
-                <Entry
-                    x:Name ="Telefone"
-                    WidthRequest="400"
-                    Placeholder="(DDD)99999-9999"
-                    HorizontalOptions="Start"
-                />
-            </HorizontalStackLayout>
-            <Button
-                x:Name="CounterBtn"
-                Text="Cadastrar" 
-                SemanticProperties.Hint="Cadastra um Aluno"
-                WidthRequest="200"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
-
-            <ListView ItemsSource="{Binding Monkeys}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid Padding="10">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                </Grid.ColumnDefinitions>
-                                <Image Grid.RowSpan="2"
-                           Source="{Binding ImageUrl}"
-                           Aspect="AspectFill"
-                           HeightRequest="60"
-                           WidthRequest="60" />
-                                <Label Grid.Column="1"
-                           Text="{Binding Name}"
-                           FontAttributes="Bold" />
-                                <Label Grid.Row="1"
-                           Grid.Column="1"
-                           Text="{Binding Location}"
-                           FontAttributes="Italic"
-                           VerticalOptions="End" />
-                            </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+    <Label Text="Tela Inicial"
+           FontSize="Title"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"
+           
+           />
 
 
-        </VerticalStackLayout>
-    </ScrollView>
+
 
 </ContentPage>

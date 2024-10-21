@@ -5,11 +5,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:GerenciadorCursos"
     Shell.FlyoutBehavior="Disabled"
-    Title="GerenciadorCursos">
+    Title="Gerenciador de Cursos Online">
 
-    <ShellContent
-        Title="Home"
+    <TabBar>
+        <ShellContent
+        Title="Inicio"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+        
+        <ShellContent
+        Title="Matricular Aluno"
+        ContentTemplate="{DataTemplate local:Matricula}"
+        Route="Matricula" />
+        
+    </TabBar>
 
 </Shell>

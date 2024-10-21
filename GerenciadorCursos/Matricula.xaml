@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GerenciadorCursos.Matricula"
+             Title="Matricula">
+    
+        <ContentPage.Resources>
+            <Style TargetType="Grid">
+                <Setter Property="ColumnSpacing"
+                        Value="10"/>
+                <Setter Property="Margin"
+                        Value="10"/>
+                <Setter Property="RowSpacing"
+                        Value="10"/>
+                <Setter Property="Padding"
+                        Value="10"/>
+
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="VerticalTextAlignment"
+                        Value="Center"/>
+            </Style>
+            <Style TargetType="HorizontalStackLayout">
+                <Setter Property="Spacing"
+                        Value="10"/>
+
+            </Style>
+        </ContentPage.Resources>
+    <ScrollView>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+      ColumnDefinitions="Auto,*"
+      >
+            <Label Grid.Row="0"
+           Grid.ColumnSpan="2"
+           Text="Matrícula"
+           FontSize="Title"
+    />
+
+            <Label Grid.Row="1"
+           Grid.ColumnSpan="2"
+           FontSize="Body"
+           
+           Text="Insira as informações do Aluno"
+    />
+
+            <BoxView Grid.Row="2"
+             Grid.ColumnSpan="2"
+             HeightRequest="1"
+             Margin="0,0,0,30"
+    />
+            <Label Grid.Row="3"
+           Text="Nome"/>
+            <Entry Grid.Row="3"
+           Grid.Column="1"/>
+
+            <Label Grid.Row="4"
+           Text="E-Mail"/>
+            <Entry Grid.Row="4"
+           Grid.Column="1"/>
+
+            <Label Grid.Row="5"
+           Text="Data de Nascimento"/>
+            <Entry Grid.Row="5"
+           Grid.Column="1"/>
+
+            <Label Grid.Row="6"
+           Text="CPF"/>
+            <Entry Grid.Row="6"
+           Grid.Column="1"/>
+
+            <Label Grid.Row="7"
+           Text="RG"/>
+            <Entry Grid.Row="7"
+           Grid.Column="1"/>
+
+            <Label Grid.Row="8"
+           Text="Telefone"/>
+            <Entry Grid.Row="8"
+           Grid.Column="1"/>
+
+            <Label Grid.Row="9"
+           Text="Endereço"/>
+            <Entry Grid.Row="9"
+           Grid.Column="1"/>
+
+            <HorizontalStackLayout Grid.Row="10"
+                           Grid.Column=" 1"
+                           >
+                <Button Text ="Confirmar"/>
+                <Button Text= "Cancelar"/>
+            </HorizontalStackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
