@@ -19,4 +19,9 @@ public class Aluno
     public string endereco { get; set; }
 
     public string telefone { get; set; }
+
+    public override string ToString()
+    {
+        return $"[{nome}, {email}, {cpf}]";
+    }
 }

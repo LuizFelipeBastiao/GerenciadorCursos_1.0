@@ -7,6 +7,23 @@ namespace GerenciadorCursos
             InitializeComponent();
         }
 
+
+        private void OnSalvarClicked(object sender, EventArgs e)
+        {
+            GerenciadorCursos.Aluno aluno = new();
+
+            aluno.nome = NomeEntry.Text;
+            aluno.email = EmailEntry.Text;
+            aluno.dataNasc = DataEntry.Text;    
+            aluno.cpf = CPFEntry.Text;
+            aluno.rg = RGEntry.Text;
+            aluno.telefone = TelefoneEntry.Text;
+
+            BotaoSalvar.Text = aluno.ToString();
+
+        }
+
+
         private void AoMarcarCheckBoxMF(object sender, CheckedChangedEventArgs e)
         {
             if (sender == MasculinoCheckBox && e.Value)
