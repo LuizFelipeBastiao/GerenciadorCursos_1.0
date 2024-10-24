@@ -19,7 +19,9 @@
             <Style TargetType="Label">
                 <Setter Property="VerticalTextAlignment"
                         Value="Center"/>
-            </Style>
+            <Setter Property="HorizontalTextAlignment"
+                    Value="Center"/>
+        </Style>
             <Style TargetType="HorizontalStackLayout">
                 <Setter Property="Spacing"
                         Value="10"/>
@@ -28,12 +30,13 @@
         </ContentPage.Resources>
     <ScrollView>
         <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
-      ColumnDefinitions="Auto,*"
+              ColumnDefinitions="Auto,*"
       >
             <Label Grid.Row="0"
                    Grid.ColumnSpan="2"
                    Text="Matrícula"
                    FontSize="Title"
+                   
                    HorizontalTextAlignment="Center"
            
             />
@@ -50,7 +53,8 @@
              HeightRequest="1"
              Margin="0,0,0,30"/>
             
-            <Label Grid.Row="3"
+            <Label x:Name="NomeEntry"
+                    Grid.Row="3"
                    Text="Nome"/>
             
             <Entry Grid.Row="3"
@@ -60,7 +64,8 @@
 
             <Label Grid.Row="4"
                    Text="E-Mail"/>
-            <Entry Grid.Row="4"
+            <Entry x:Name="EmailEntry"
+                    Grid.Row="4"
                    Grid.Column="1"
                    Placeholder="email@email.com"/>
 
@@ -110,7 +115,6 @@
                        />
                 <CheckBox x:Name="FemininoCheckBox"
                           CheckedChanged="AoMarcarCheckBoxMF"
-                          
                           />
             </HorizontalStackLayout>
 
@@ -126,6 +130,7 @@
                     CheckedChanged="AoMarcarCheckBoxSC"/>
 
                 <Label Text="Casado(a)"
+                       
                 />
                 <CheckBox
                     x:Name="CasadoCheckBox"
@@ -136,8 +141,10 @@
             <HorizontalStackLayout Grid.Row="12"
                            Grid.Column="1"                   
             >
-                <Button Text ="Confirmar"/>
-                
+                <Button Clicked="AoClicarConfirmar" 
+                    Text ="Confirmar"/>
+                <Label x:Name="Informacoes"/>
+
             </HorizontalStackLayout>
 
         </Grid>
