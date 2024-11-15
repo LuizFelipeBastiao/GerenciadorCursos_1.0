@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:GerenciadorCursos"
+    xmlns:TelaModulo="clr-namespace:GerenciadorCursos"
     Shell.FlyoutBehavior="Disabled"
     Title="Gerenciador de Cursos Online"
     >
@@ -18,7 +19,12 @@
         Title="Matricular Aluno"
         ContentTemplate="{DataTemplate local:Matricula}"
         Route="Matricula" />
-        
+
+        <ShellContent
+        Title="Cadastrar Modulo"
+        ContentTemplate="{DataTemplate local:ModuloTela}"
+        Route="ModuloTela" />
+
     </TabBar>
 
 </Shell>
