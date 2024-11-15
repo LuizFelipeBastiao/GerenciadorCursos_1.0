@@ -143,9 +143,7 @@
             <HorizontalStackLayout Grid.Row="12"
                            Grid.Column="1"                   
             >
-                <Button Clicked="OnSalvarClicked"
-                        Text ="Salvar"/>
-                <Label x:Name="BotaoSalvar"/>
+                
 
             </HorizontalStackLayout>
 

@@ -3,7 +3,7 @@ using Models;
 
 namespace GerenciadorCursos.Models
 {
-    internal class Modulo
+    public class Modulo
     {
         int Id { get; set; }
         string Titulo { get; set; }

@@ -1,5 +1,6 @@
-using static System.Net.Mime.MediaTypeNames;
 
+using GerenciadorCursos.Models;
+using Models;
 namespace GerenciadorCursos;
 
 public partial class ModuloTela : ContentPage
@@ -13,7 +14,7 @@ public partial class ModuloTela : ContentPage
     {
         Modulo DadosModulo = new Modulo();
 
-        DadosModulo.nomeModulo = NomeModuloEntry.Text;
+      //  DadosModulo.Titulo 
         
     }
 

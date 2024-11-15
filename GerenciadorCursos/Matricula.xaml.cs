@@ -8,7 +8,7 @@ namespace GerenciadorCursos
         }
 
 
-        private void OnSalvarClicked(object sender, EventArgs e)
+       /* private void OnSalvarClicked(object sender, EventArgs e)
         {
             GerenciadorCursos.Aluno aluno = new();
 
@@ -23,7 +23,7 @@ namespace GerenciadorCursos
 
         }
 
-
+        */
         private void AoMarcarCheckBoxMF(object sender, CheckedChangedEventArgs e)
         {
             if (sender == MasculinoCheckBox && e.Value)
