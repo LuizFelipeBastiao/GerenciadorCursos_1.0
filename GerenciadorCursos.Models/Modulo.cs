@@ -7,7 +7,7 @@ namespace GerenciadorCursos.Models
     {
         int Id { get; set; }
         string Titulo { get; set; }
-        Curso Curso { get; set; }
+       public  Curso Curso { get; set; }
         ICollection<Licao> licoes { get; set; }
 
         public Modulo()

@@ -3,7 +3,7 @@ internal class ProgressoAluno
 {
     int Id { get; set; }
 
-    Usuario Aluno { get; set; }
-    Curso Curso { get; set; }
+    public Usuario Aluno { get; set; } = null;
+    public Curso Curso { get; set; } = null;
     float PercentualConclusao { get; set; }
 }
