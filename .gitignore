@@ -368,3 +368,7 @@ FodyWeavers.xsd
 /GerenciadorCursos/GerenciadorCursos.csproj
 /GerenciadorCursos/ModuloTela.xaml
 /GerenciadorCursos/Módulo.cs
+/GerenciadorCursos/Matricula.xaml.cs
+/GerenciadorCursos/Matricula.xaml
+/.gitignore
+/.gitignore
