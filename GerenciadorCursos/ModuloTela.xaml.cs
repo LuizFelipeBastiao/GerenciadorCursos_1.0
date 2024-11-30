@@ -7,7 +7,7 @@ public partial class ModuloTela : ContentPage
 {
 	public ModuloTela()
 	{
-		InitializeComponent();
+        InitializeComponent();
     }
 
     private void AoClicarSalvar(object sender, EventArgs e)

@@ -1,5 +1,5 @@
 ﻿namespace Models;
-internal class ProgressoAluno
+public class ProgressoAluno
 {
     int Id { get; set; }
 

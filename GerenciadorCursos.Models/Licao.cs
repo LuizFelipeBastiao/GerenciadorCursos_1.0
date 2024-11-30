@@ -2,7 +2,7 @@
 
 namespace Models
 {
-    internal class Licao
+    public class Licao
     {
         int Id { get; set; }
         string Titulo { get; set; }

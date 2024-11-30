@@ -16,7 +16,7 @@ namespace GerenciadorCursos
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+    		//builder.Services.AddDbContext
 #endif
 
             return builder.Build();
